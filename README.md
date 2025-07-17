@@ -5,7 +5,7 @@
 
 Une suite complète de nœuds pour la manipulation de données, le traitement de texte avancé et l'automatisation de workflows dans ComfyUI.
 
-Ce pack est conçu pour les utilisateurs qui souhaitent dépasser les limites des nœuds standards, en offrant des outils pour lire des métadonnées, construire des chaînes de texte complexes, interagir avec le système de fichiers et même exécuter des scripts Python personnalisés en toute sécurité.
+Ce pack est conçu pour les utilisateurs qui souhaitent dépasser les limites des nœuds standards, en offrant des outils pour lire des métadonnées, construire des chaînes de texte complexes, interagir avec le système de fichiers et même exécuter des scripts Python personnalisés directement dans ComfyUI.
 
 ---
 
