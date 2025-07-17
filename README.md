@@ -77,6 +77,8 @@ Interagissez avec le système de fichiers et gérez des variables au sein de vot
 
 ## ⚠️ AVERTISSEMENT DE SÉCURITÉ : Nœud `PyCodePro`
 
+<img width="458" height="1190" alt="image" src="https://github.com/user-attachments/assets/771cbc40-5e75-4a79-90d5-92962a848396" />
+
 Le nœud `PyCodePro` est un outil extrêmement puissant qui comporte des risques de sécurité importants. Il n'y a **AUCUNE** sandbox. Un script malveillant peut accéder à vos fichiers, supprimer des données ou installer des logiciels malveillants.
 
 **Règles d'Or :**
