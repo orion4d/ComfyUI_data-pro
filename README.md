@@ -30,6 +30,8 @@ Ce pack est organisé en plusieurs catégories pour une utilisation intuitive.
 
 ### 🐍 Scripting Avancé
 
+<img width="1664" height="1045" alt="image" src="https://github.com/user-attachments/assets/69962a94-c49f-432b-a3df-dae90359ce3e" />
+
 Ces nœuds permettent une personnalisation extrême de vos workflows. **Utilisez-les avec une extrême prudence.**
 
 *   **PyCode Pro** & **PyCode Pro (Custom)**: Exécutez du code Python directement dans votre workflow. Parfait pour des opérations complexes, des intégrations d'API ou des manipulations de données uniques. **La version `Custom` offre beaucoup plus d'entrées/sorties pour les workflows très complexes.**
