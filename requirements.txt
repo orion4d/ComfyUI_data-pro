@@ -1,0 +1,7 @@
+# --- requirements.txt for Data Pro Nodes ---
+
+# Ce pack de nœuds n'a pas de dépendances Python externes supplémentaires.
+# Toutes les bibliothèques nécessaires (comme torch, numpy, et Pillow)
+# sont déjà incluses dans une installation standard de ComfyUI.
+
+# Aucune action `pip install -r requirements.txt` n'est requise.
