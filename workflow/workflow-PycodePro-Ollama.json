@@ -1,0 +1,678 @@
+{
+  "id": "64522e5b-21ae-4195-83bb-c879f7cdeeb9",
+  "revision": 0,
+  "last_node_id": 8,
+  "last_link_id": 7,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "LoadImage",
+      "pos": [
+        11221.7783203125,
+        2505.652587890625
+      ],
+      "size": [
+        274.080078125,
+        314
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            6
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.43",
+        "widget_ue_connectable": {},
+        "Node name for S&R": "LoadImage",
+        "ttNbgOverride": {
+          "color": "#2a363b",
+          "bgcolor": "#3f5159",
+          "groupcolor": "#3f789e"
+        }
+      },
+      "widgets_values": [
+        "test-fujifilm-xm5-34-scaled - Copie.jpg",
+        "image"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 2,
+      "type": "ShowText|pysssss",
+      "pos": [
+        12618.099609375,
+        2447.737548828125
+      ],
+      "size": [
+        346.7017517089844,
+        450.6576843261719
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.2.5",
+        "widget_ue_connectable": {},
+        "Node name for S&R": "ShowText|pysssss",
+        "ttNbgOverride": {
+          "color": "#2a363b",
+          "bgcolor": "#3f5159",
+          "groupcolor": "#3f789e"
+        }
+      },
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 3,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        11192.634765625,
+        2934.66748046875
+      ],
+      "size": [
+        825,
+        474
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            4
+          ]
+        }
+      ],
+      "title": "system prompt (option)",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.43",
+        "widget_ue_connectable": {},
+        "Node name for S&R": "PrimitiveStringMultiline",
+        "ttNbgOverride": {
+          "color": "#2a363b",
+          "bgcolor": "#3f5159",
+          "groupcolor": "#3f789e"
+        }
+      },
+      "widgets_values": [
+        "You are an expert assistant for visual prompt generation. Your task is to write a vivid and stylistically fluent prompt in the Flux format, based on the image provided.\n\n– Carefully observe the image and extract key artistic details: subject, pose, setting, lighting, art style, mood, atmosphere, and notable visual features.\n– Convert these observations into a single descriptive sentence, using fluid, evocative language.\n– Do not include technical metadata, explanations, or formatting cues.\n– Do not start with phrases like “describes this image” or “an image of.”\n– The output must be usable as-is in a ComfyUI prompt input.\n\n✳️ Only return the prompt sentence. No comments. No preamble.\n\nExamples (for inspiration):\n– a misty mountain landscape under golden hour light, scattered pine trees, dramatic clouds, painterly brushwork\n– a futuristic android woman with glowing eyes sitting in a neon-lit diner, cinematic composition, retro sci-fi vibes\n– a serene japanese garden at twilight with floating lanterns and cherry blossoms, soft lighting, peaceful atmosphere"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 4,
+      "type": "PyCodePro",
+      "pos": [
+        12158.5087890625,
+        2493.475830078125
+      ],
+      "size": [
+        398.66900634765625,
+        1052.4630126953125
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "txt_in_1",
+          "shape": 7,
+          "type": "STRING",
+          "link": 2
+        },
+        {
+          "name": "txt_in_2",
+          "shape": 7,
+          "type": "STRING",
+          "link": 3
+        },
+        {
+          "name": "txt_in_3",
+          "shape": 7,
+          "type": "STRING",
+          "link": 4
+        },
+        {
+          "name": "txt_in_4",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        },
+        {
+          "name": "int_in_1",
+          "shape": 7,
+          "type": "INT",
+          "link": null
+        },
+        {
+          "name": "int_in_2",
+          "shape": 7,
+          "type": "INT",
+          "link": null
+        },
+        {
+          "name": "float_in_1",
+          "shape": 7,
+          "type": "FLOAT",
+          "link": 5
+        },
+        {
+          "name": "float_in_2",
+          "shape": 7,
+          "type": "FLOAT",
+          "link": null
+        },
+        {
+          "name": "img_in_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 6
+        },
+        {
+          "name": "img_in_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "mask_in",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "name": "latent_in",
+          "shape": 7,
+          "type": "LATENT",
+          "link": null
+        },
+        {
+          "name": "positive",
+          "shape": 7,
+          "type": "CONDITIONING",
+          "link": null
+        },
+        {
+          "name": "negative",
+          "shape": 7,
+          "type": "CONDITIONING",
+          "link": null
+        },
+        {
+          "name": "model",
+          "shape": 7,
+          "type": "MODEL",
+          "link": null
+        },
+        {
+          "name": "clip",
+          "shape": 7,
+          "type": "CLIP",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        },
+        {
+          "name": "audio_in",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "name": "video_in",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "name": "custom_in_1",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "name": "custom_in_2",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "name": "trigger",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "txt_out_1",
+          "type": "STRING",
+          "links": [
+            1
+          ]
+        },
+        {
+          "name": "txt_out_2",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "txt_out_3",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "txt_out_4",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "int_out_1",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "int_out_2",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "float_out_1",
+          "type": "FLOAT",
+          "links": null
+        },
+        {
+          "name": "float_out_2",
+          "type": "FLOAT",
+          "links": null
+        },
+        {
+          "name": "img_out_1",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "name": "img_out_2",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "name": "mask_out",
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "name": "latent_out",
+          "type": "LATENT",
+          "links": null
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": null
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": null
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": null
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "links": null
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "links": null
+        },
+        {
+          "name": "audio_out",
+          "type": "*",
+          "links": null
+        },
+        {
+          "name": "video_out",
+          "type": "*",
+          "links": null
+        },
+        {
+          "name": "custom_out_1",
+          "type": "*",
+          "links": null
+        },
+        {
+          "name": "custom_out_2",
+          "type": "*",
+          "links": null
+        },
+        {
+          "name": "Console",
+          "type": "STRING",
+          "links": [
+            7
+          ]
+        }
+      ],
+      "properties": {
+        "widget_ue_connectable": {},
+        "Node name for S&R": "PyCodePro",
+        "ttNbgOverride": {
+          "color": "#2a363b",
+          "bgcolor": "#3f5159",
+          "groupcolor": "#3f789e"
+        }
+      },
+      "widgets_values": [
+        "text_input",
+        "# --- Script pour interroger Ollama avec un modèle de vision ---\n\n# Entrees utilisees :\n# IN['img_in_1']: L'image a analyser (obligatoire pour ce script).\n# IN['txt_in_1']: Le prompt principal (ex: \"Decris cette image.\").\n# IN['txt_in_2']: (Optionnel) Le nom du modele a utiliser (ex: 'qwen2.5vl:7b').\n# IN['float_in_1']: (Optionnel) La temperature (creativite).\n\n# Sorties utilisees :\n# OUT['txt_out_1']: La reponse generee par le modele.\n\nimport requests\nimport json\nimport base64  # <-- NOUVEL IMPORT pour l'encodage\nimport io      # <-- NOUVEL IMPORT pour la manipulation en memoire\n\n# --- Parametres ---\nOLLAMA_API_URL = \"http://127.0.0.1:11434/api/generate\"\nDEFAULT_MODEL = \"qwen2.5vl:7b\" # Modele par defaut si non specifie\n\n# --- Recuperation des entrees ---\nprompt = IN.get(\"txt_in_1\")\npil_image = IN.get(\"img_in_1\") # <-- On recupere l'image\nmodel_name = IN.get(\"txt_in_2\") or DEFAULT_MODEL\ntemperature = IN.get(\"float_in_1\", 0.7)\n\n# --- Logique principale ---\nif not prompt:\n    OUT[\"txt_out_1\"] = \"Erreur: Prompt manquant dans 'txt_in_1'.\"\nelif pil_image is None:\n    OUT[\"txt_out_1\"] = \"Erreur: Aucune image n'a ete fournie dans 'img_in_1'.\"\nelse:\n    print(f\"Preparation de l'image et envoi a Ollama avec le modele '{model_name}'...\")\n\n    # --- NOUVELLE PARTIE : GESTION DE L'IMAGE ---\n    # 1. Convertir l'image PIL en bytes (format PNG) en memoire\n    buffered = io.BytesIO()\n    pil_image.save(buffered, format=\"PNG\")\n    img_bytes = buffered.getvalue()\n\n    # 2. Encoder ces bytes en Base64\n    img_base64 = base64.b64encode(img_bytes).decode('utf-8')\n    # -----------------------------------------------\n\n    payload = {\n        \"model\": model_name,\n        \"prompt\": prompt,\n        \"stream\": False,\n        \"images\": [img_base64], # <-- ON AJOUTE L'IMAGE ENCODÉE ICI\n        \"options\": {\n            \"temperature\": temperature\n        }\n    }\n\n    try:\n        response = requests.post(OLLAMA_API_URL, json=payload, timeout=120)\n        response.raise_for_status()\n\n        response_data = response.json()\n        generated_text = response_data.get(\"response\", \"Erreur: Champ 'response' non trouve.\")\n        \n        OUT[\"txt_out_1\"] = generated_text\n        print(\"Reponse d'Ollama recue avec succes.\")\n\n    except requests.exceptions.ConnectionError:\n        error_msg = \"ERREUR DE CONNEXION: Ollama est-il lance ?\"\n        print(error_msg)\n        OUT[\"txt_out_1\"] = error_msg\n        \n    except requests.exceptions.HTTPError as e:\n        error_msg = f\"ERREUR HTTP: {e.response.status_code}. Le modele '{model_name}' est-il bien telecharge ?\"\n        print(error_msg)\n        OUT[\"txt_out_1\"] = error_msg\n\n    except Exception as e:\n        error_msg = f\"Une erreur inattendue est survenue: {str(e)}\"\n        print(error_msg)\n        OUT[\"txt_out_1\"] = error_msg",
+        "None"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 5,
+      "type": "PrimitiveFloat",
+      "pos": [
+        11745.0166015625,
+        2801.74462890625
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": [
+            5
+          ]
+        }
+      ],
+      "title": "temperature",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.43",
+        "widget_ue_connectable": {},
+        "Node name for S&R": "PrimitiveFloat",
+        "ttNbgOverride": {
+          "color": "#2a363b",
+          "bgcolor": "#3f5159",
+          "groupcolor": "#3f789e"
+        }
+      },
+      "widgets_values": [
+        0.5
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 6,
+      "type": "ttN text",
+      "pos": [
+        11600.287109375,
+        2655.220703125
+      ],
+      "size": [
+        412.3966979980469,
+        95.86776733398438
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            3
+          ]
+        }
+      ],
+      "title": "Ollama model name",
+      "properties": {
+        "cnr_id": "comfyui_tinyterranodes",
+        "ver": "2.0.7",
+        "widget_ue_connectable": {},
+        "Node name for S&R": "ttN text",
+        "ttNbgOverride": {
+          "color": "#2a363b",
+          "bgcolor": "#3f5159",
+          "groupcolor": "#3f789e"
+        },
+        "ttNnodeVersion": "1.0.0"
+      },
+      "widgets_values": [
+        "qwen2.5vl:7b"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 7,
+      "type": "ttN text",
+      "pos": [
+        11584.5068359375,
+        2468.032470703125
+      ],
+      "size": [
+        429.6725158691406,
+        88
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            2
+          ]
+        }
+      ],
+      "title": "prompt",
+      "properties": {
+        "cnr_id": "comfyui_tinyterranodes",
+        "ver": "2.0.7",
+        "widget_ue_connectable": {},
+        "Node name for S&R": "ttN text",
+        "ttNbgOverride": {
+          "color": "#2a363b",
+          "bgcolor": "#3f5159",
+          "groupcolor": "#3f789e"
+        },
+        "ttNnodeVersion": "1.0.0"
+      },
+      "widgets_values": [
+        "describe this image\n"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 8,
+      "type": "ShowText|pysssss",
+      "pos": [
+        12641.0517578125,
+        2984.983154296875
+      ],
+      "size": [
+        210,
+        481.5654602050781
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.2.5",
+        "widget_ue_connectable": {},
+        "Node name for S&R": "ShowText|pysssss",
+        "ttNbgOverride": {
+          "color": "#2a363b",
+          "bgcolor": "#3f5159",
+          "groupcolor": "#3f789e"
+        }
+      },
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    }
+  ],
+  "links": [
+    [
+      1,
+      4,
+      0,
+      2,
+      0,
+      "STRING"
+    ],
+    [
+      2,
+      7,
+      0,
+      4,
+      0,
+      "STRING"
+    ],
+    [
+      3,
+      6,
+      0,
+      4,
+      1,
+      "STRING"
+    ],
+    [
+      4,
+      3,
+      0,
+      4,
+      2,
+      "STRING"
+    ],
+    [
+      5,
+      5,
+      0,
+      4,
+      6,
+      "FLOAT"
+    ],
+    [
+      6,
+      1,
+      0,
+      4,
+      8,
+      "IMAGE"
+    ],
+    [
+      7,
+      4,
+      21,
+      8,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "Ollama vision",
+      "bounding": [
+        11155.1337890625,
+        2319.735107421875,
+        1919.1964111328125,
+        1365.7635498046875
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ue_links": [],
+    "ds": {
+      "scale": 0.8264462809917356,
+      "offset": [
+        -11092.634765625,
+        -2347.737548828125
+      ]
+    },
+    "frontendVersion": "1.23.4"
+  },
+  "version": 0.4
+}

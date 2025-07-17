@@ -1,0 +1,483 @@
+{
+  "id": "8b8dd896-3044-42b7-bce9-27e8186be558",
+  "revision": 0,
+  "last_node_id": 4,
+  "last_link_id": 3,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "PyCodePro",
+      "pos": [
+        10363.1826171875,
+        2763.10595703125
+      ],
+      "size": [
+        457.9783630371094,
+        1037.54248046875
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "txt_in_1",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        },
+        {
+          "name": "txt_in_2",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        },
+        {
+          "name": "txt_in_3",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        },
+        {
+          "name": "txt_in_4",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        },
+        {
+          "name": "int_in_1",
+          "shape": 7,
+          "type": "INT",
+          "link": null
+        },
+        {
+          "name": "int_in_2",
+          "shape": 7,
+          "type": "INT",
+          "link": null
+        },
+        {
+          "name": "float_in_1",
+          "shape": 7,
+          "type": "FLOAT",
+          "link": null
+        },
+        {
+          "name": "float_in_2",
+          "shape": 7,
+          "type": "FLOAT",
+          "link": null
+        },
+        {
+          "name": "img_in_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 1
+        },
+        {
+          "name": "img_in_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "mask_in",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "name": "latent_in",
+          "shape": 7,
+          "type": "LATENT",
+          "link": null
+        },
+        {
+          "name": "positive",
+          "shape": 7,
+          "type": "CONDITIONING",
+          "link": null
+        },
+        {
+          "name": "negative",
+          "shape": 7,
+          "type": "CONDITIONING",
+          "link": null
+        },
+        {
+          "name": "model",
+          "shape": 7,
+          "type": "MODEL",
+          "link": null
+        },
+        {
+          "name": "clip",
+          "shape": 7,
+          "type": "CLIP",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        },
+        {
+          "name": "audio_in",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "name": "video_in",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "name": "custom_in_1",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "name": "custom_in_2",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "name": "trigger",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "txt_out_1",
+          "type": "STRING",
+          "links": [
+            2
+          ]
+        },
+        {
+          "name": "txt_out_2",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "txt_out_3",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "txt_out_4",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "int_out_1",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "int_out_2",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "float_out_1",
+          "type": "FLOAT",
+          "links": null
+        },
+        {
+          "name": "float_out_2",
+          "type": "FLOAT",
+          "links": null
+        },
+        {
+          "name": "img_out_1",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "name": "img_out_2",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "name": "mask_out",
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "name": "latent_out",
+          "type": "LATENT",
+          "links": null
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": null
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": null
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": null
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "links": null
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "links": null
+        },
+        {
+          "name": "audio_out",
+          "type": "*",
+          "links": null
+        },
+        {
+          "name": "video_out",
+          "type": "*",
+          "links": null
+        },
+        {
+          "name": "custom_out_1",
+          "type": "*",
+          "links": null
+        },
+        {
+          "name": "custom_out_2",
+          "type": "*",
+          "links": null
+        },
+        {
+          "name": "Console",
+          "type": "STRING",
+          "links": [
+            3
+          ]
+        }
+      ],
+      "properties": {
+        "widget_ue_connectable": {},
+        "Node name for S&R": "PyCodePro",
+        "ttNbgOverride": {
+          "color": "#2a363b",
+          "bgcolor": "#3f5159",
+          "groupcolor": "#3f789e"
+        }
+      },
+      "widgets_values": [
+        "text_input",
+        "# Votre code Python ici# --- Début du Code : OCR avec Tesseract ---\n# On a besoin d'importer la librairie pytesseract\ntry:\n    import pytesseract\n    from PIL import Image\n    print(\"pytesseract importé avec succès.\")\n\n    # Optionnel: Si Tesseract n'est pas dans votre PATH système, \n    # vous devrez peut-être indiquer son emplacement. Décommentez et ajustez la ligne ci-dessous.\n    # pytesseract.pytesseract.tesseract_cmd = r'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'\n\nexcept ImportError:\n    print(\"ERREUR : La librairie 'pytesseract' n'est pas installée.\")\n    print(\"Veuillez l'installer dans votre venv avec : pip install pytesseract\")\n    OUT['txt_out_1'] = \"Erreur: pytesseract manquant.\"\n    # On arrête le script si la librairie n'est pas là.\n    # On utilise un 'raise' pour stopper proprement et voir l'erreur dans la console.\n    raise ImportError(\"pytesseract n'a pas pu être importé.\")\n\n# 1. Récupérer l'image depuis l'entrée\n# Notre nœud la convertit déjà en image PIL, c'est parfait !\npil_image = IN.get('img_in_1')\n\nif pil_image is not None:\n    print(f\"Image reçue pour l'OCR. Dimensions : {pil_image.size}\")\n    \n    try:\n        # 2. Lancer le moteur OCR sur l'image\n        # La fonction image_to_string fait tout le travail.\n        # On peut spécifier la langue (ex: 'eng' pour anglais, 'fra' pour français)\n        # S'il y a plusieurs langues, on peut faire 'eng+fra'.\n        detected_text = pytesseract.image_to_string(pil_image, lang='eng')\n        \n        if detected_text and detected_text.strip():\n            print(\"--- Texte Détecté ---\")\n            print(detected_text)\n            print(\"--------------------\")\n            \n            # 3. Placer le texte détecté dans la sortie\n            OUT['txt_out_1'] = detected_text.strip()\n        else:\n            print(\"Aucun texte n'a été détecté sur l'image.\")\n            OUT['txt_out_1'] = \"Aucun texte détecté.\"\n            \n    except pytesseract.TesseractNotFoundError:\n        error_msg = \"ERREUR : Tesseract n'est pas installé ou n'est pas dans le PATH système.\"\n        print(error_msg)\n        print(\"Veuillez installer Tesseract OCR depuis le site officiel et vous assurer qu'il est accessible.\")\n        OUT['txt_out_1'] = error_msg\n        \n    except Exception as e:\n        error_msg = f\"Une erreur inattendue est survenue pendant l'OCR : {e}\"\n        print(error_msg)\n        OUT['txt_out_1'] = error_msg\n        \nelse:\n    print(\"Aucune image n'a été fournie en entrée img_in_1.\")\n    OUT['txt_out_1'] = \"Pas d'image en entrée.\"\n\n# --- Fin du Code ---",
+        "None"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 2,
+      "type": "ShowText|pysssss",
+      "pos": [
+        10980.2373046875,
+        2732.87890625
+      ],
+      "size": [
+        278,
+        194
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.2.5",
+        "widget_ue_connectable": {},
+        "Node name for S&R": "ShowText|pysssss",
+        "ttNbgOverride": {
+          "color": "#2a363b",
+          "bgcolor": "#3f5159",
+          "groupcolor": "#3f789e"
+        }
+      },
+      "widgets_values": [
+        "PULP\nMOGETTE"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 3,
+      "type": "ShowText|pysssss",
+      "pos": [
+        10993.716796875,
+        3034.1845703125
+      ],
+      "size": [
+        210,
+        332.3636474609375
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.2.5",
+        "widget_ue_connectable": {},
+        "Node name for S&R": "ShowText|pysssss",
+        "ttNbgOverride": {
+          "color": "#2a363b",
+          "bgcolor": "#3f5159",
+          "groupcolor": "#3f789e"
+        }
+      },
+      "widgets_values": [
+        "WARNING: Executing arbitrary Python code is a security risk...\n\npytesseract importé avec succès.\nImage reçue pour l'OCR. Dimensions : (1520, 1536)\n--- Texte Détecté ---\nPULP\nMOGETTE\n\n\n--------------------\n"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 4,
+      "type": "LoadImage",
+      "pos": [
+        9981.826171875,
+        2807.0654296875
+      ],
+      "size": [
+        274.080078125,
+        314
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.43",
+        "widget_ue_connectable": {},
+        "Node name for S&R": "LoadImage",
+        "ttNbgOverride": {
+          "color": "#2a363b",
+          "bgcolor": "#3f5159",
+          "groupcolor": "#3f789e"
+        }
+      },
+      "widgets_values": [
+        "2025-04-21-110931_425925461726145_flux.png",
+        "image"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    }
+  ],
+  "links": [
+    [
+      1,
+      4,
+      0,
+      1,
+      8,
+      "IMAGE"
+    ],
+    [
+      2,
+      1,
+      0,
+      2,
+      0,
+      "STRING"
+    ],
+    [
+      3,
+      1,
+      21,
+      3,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "OCR",
+      "bounding": [
+        9873.6455078125,
+        2559.0693359375,
+        1424.7298583984375,
+        1348.0611572265625
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ue_links": [],
+    "links_added_by_ue": [],
+    "ds": {
+      "scale": 0.9090909090909091,
+      "offset": [
+        -9881.826171875,
+        -2632.87890625
+      ]
+    },
+    "frontendVersion": "1.23.4"
+  },
+  "version": 0.4
+}
