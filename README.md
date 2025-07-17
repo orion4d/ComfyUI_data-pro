@@ -17,7 +17,7 @@ Ce pack est conçu pour les utilisateurs qui souhaitent dépasser les limites de
 2.  Naviguez jusqu'au répertoire `ComfyUI/custom_nodes/`.
 3.  Clonez ce dépôt avec la commande suivante :
     ```bash
-    git clone https://github.com/votre-nom-utilisateur/votre-repo-nom.git
+    git clone https://github.com/orion4d/ComfyUI_data-pro.git
     ```
 4.  Redémarrez ComfyUI.
 5.  Vous trouverez tous les nœuds de ce pack dans la catégorie **"Data pro"**.
