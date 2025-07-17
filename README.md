@@ -39,6 +39,8 @@ Ces nœuds permettent une personnalisation extrême de vos workflows. **Utilisez
 
 ### 🖼️ Métadonnées & Gestion de Workflow
 
+<img width="1481" height="1153" alt="image" src="https://github.com/user-attachments/assets/0bafc74a-4492-441a-8c96-a8e26682b7da" />
+
 Prenez le contrôle total des informations intégrées dans vos images.
 
 *   **Read EXIF Data**: Extrayez des données EXIF et XMP détaillées d'une image (modèle de caméra, objectif, ISO, etc.).
