@@ -51,6 +51,8 @@ Prenez le contrôle total des informations intégrées dans vos images.
 
 ### ✍️ Traitement de Texte
 
+<img width="1353" height="1198" alt="image" src="https://github.com/user-attachments/assets/5cf1c66c-1d27-471b-b7e6-c38697ebea3f" />
+
 Construisez, modifiez et manipulez des chaînes de caractères avec facilité.
 
 *   **Simple Text Concat**: Concaténez deux textes avec un préfixe, un délimiteur et un suffixe.
@@ -62,6 +64,8 @@ Construisez, modifiez et manipulez des chaînes de caractères avec facilité.
 *   **Text Wrapper**: Encadrez facilement votre texte avec des parenthèses, des crochets, ou des préfixes/suffixes personnalisés.
 
 ### 🗂️ Fichiers & Variables
+
+<img width="2293" height="614" alt="image" src="https://github.com/user-attachments/assets/0db66ef2-7918-4ce5-b9e4-476524726e9b" />
 
 Interagissez avec le système de fichiers et gérez des variables au sein de votre workflow.
 
