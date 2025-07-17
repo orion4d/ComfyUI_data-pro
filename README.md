@@ -42,7 +42,7 @@ Prenez le contrôle total des informations intégrées dans vos images.
 *   **Read EXIF Data**: Extrayez des données EXIF et XMP détaillées d'une image (modèle de caméra, objectif, ISO, etc.).
 *   **Load Image & Get Workflow**: Chargez une image et extrayez simultanément le workflow JSON complet qui a servi à la créer.
 *   **Save Image with Rich Metadata**: Sauvegardez vos images en y intégrant des métadonnées riches (prompts, modèles, LoRAs, données personnalisées) pour une reproductibilité parfaite.
-*   **Parse Metadata** & **Parse json**: Décodez des métadonnées brutes ou un workflow JSON pour en extraire des informations clés comme les prompts, les modèles, les LoRAs et les paramètres d'échantillonnage.
+*   **Parse Metadata** & **Parse json**: Décodez des métadonnées brutes ou un workflow JSON pour en extraire des informations clés comme les prompts, les modèles, les LoRAs et les paramètres d'échantillonnage. Parse Metadata est plutôt dédié pour la récupération de données d'automatic1111 ou de Civitai (les fichiers jpeg par exemple). J'ai dû faire des compromis pour la récupération de données comfyUI, compte tenu de la diversité des nodes et versions.
 *   **Convert API to Workflow**: Transformez un JSON au format API en un fichier de workflow `.json` complet et chargeable dans ComfyUI.
 
 ### ✍️ Traitement de Texte
