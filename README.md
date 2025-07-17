@@ -7,6 +7,8 @@ Une suite complète de nœuds pour la manipulation de données, le traitement de
 
 Ce pack est conçu pour les utilisateurs qui souhaitent dépasser les limites des nœuds standards, en offrant des outils pour lire des métadonnées, construire des chaînes de texte complexes, interagir avec le système de fichiers et même exécuter des scripts Python personnalisés directement dans ComfyUI.
 
+<img width="321" height="809" alt="image" src="https://github.com/user-attachments/assets/3b8c21d7-05c2-4af4-bcbd-5830b5b3d65f" />
+
 ---
 
 ## 🚀 Installation
